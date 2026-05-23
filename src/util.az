@@ -1,0 +1,11 @@
+func random_range(lo: int, hi: int) -> int {
+    let range = hi - lo + 1
+    if range <= 0 { return lo }
+    let r = random_int()
+    if r < 0 { r = -r }
+    lo + r % range
+}
+
+func roll_dice(sides: int) -> int {
+    random_range(1, sides)
+}

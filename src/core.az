@@ -1,0 +1,15 @@
+func random_int() -> int {
+    rand()
+}
+
+func random_float() -> float {
+    float(rand()) / 2147483647.0
+}
+
+func random_bool() -> bool {
+    rand() % 2 == 0
+}
+
+func seed(s: int) {
+    srand(s)
+}
